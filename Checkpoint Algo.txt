@@ -1,0 +1,20 @@
+ALGORITHM SENTENCE
+VAR
+    nb_car, nb_v, nb_w : INTEGER ;
+    c : CHAR ;
+BEGIN
+    nb_car := 0;
+    nb_v := 0;
+    nb_w := 1;
+    while ( nb_car <> ".") THEN
+        nb_car := nb_car + 1
+        
+        if ( c in ["a", "A", "o", "O", "e", "E", "i", "I", "u", "U"]) THEN
+            nb_v := nb_v + 1
+        ENDIF
+
+        if ( c := " ") THEN
+            nb_w := nb_w + 1
+        ENDIF
+    ENDWHILE
+END
